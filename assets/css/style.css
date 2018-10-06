@@ -1,8 +1,8 @@
-/* * {
+* {
     position:relative; 
     box-sizing:border-box; 
     
-} */
+}
 
 body {
     background-image:url('../images/full-bloom.png'); 
@@ -12,7 +12,11 @@ body {
     display:flex; 
     flex-direction:column;
   }
-
+.wrapper {
+    display:flex; 
+    flex-direction:column; 
+    height:100%; 
+}
 h1 {
     color:#ffffff;
     border: 2px solid #cccccc;
@@ -74,11 +78,7 @@ hr {
     margin-left: 50px;
     margin-bottom:20px;
 }
-/* img {
-    padding:20px;
-    display:inline-block; 
 
-} */
 #whiteSpace {
     max-width:860px;
     background-color: #ffffff;
@@ -88,27 +88,12 @@ hr {
 
 
 }
-/* .container {
-    background-color:#ffffff;
-    overflow:auto;
-    margin: auto;
 
-} */
-/* 
-.container::after {
-    content:"";
-    clear:both;
-    display:table;
-} */
-/* .whitespace {
-    background-color: #ffffff;
-} */
 
-img {
-    padding: 0px 0px 20px 20px;
-    display:inline-block; 
-    
-}
+/* img {
+    margin-left:50px;
+    padding-bottom: 30px;
+} */
 
 p {
     color:#777777;
@@ -132,12 +117,14 @@ p {
 
 }
 
-.footer {
-    background-color:#777777;
-    position:absolute; 
-    bottom: 0; 
-    border-top: 8px solid #4aaaa5;
-    height:30px;  
+.fixed-bottom {
+    
+    display:block; 
+    bottom:0; 
+    height:40px; 
+    background-color:#777777; 
+    flex-shrink:0px; 
+  
 }
 
 label {
